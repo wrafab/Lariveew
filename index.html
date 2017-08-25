@@ -5,14 +5,41 @@
 	
 <style>
 
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+	
 header, footer {
 	padding: 1em;
 	text-align:center;
 	font-family:"open-sans-condensed", sans-serif;
-	text-transform: uppercase;
 	font-weight: bold;
 	color: white;
 	background-color: black;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 4px solid gray;
+    padding: 1em;
+    overflow: hidden;
 }
 	
 
@@ -27,13 +54,17 @@ header, footer {
 </style>
 </head>
 
+<body>
+	
+<div class="container">
+	
 <header>
 	<h1>Walker Larivee's Pages</h1>	
 </header>
 
-<body>	
+<article>	
 	<p> My first paragraph <p1>
-</body>	
+</article>	
 		
 <nav>
 	<ul>
@@ -43,5 +74,7 @@ header, footer {
 	
 <footer>
 </footer>
+	
+</body>
 	
 </html>
