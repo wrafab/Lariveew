@@ -2,12 +2,6 @@
 <head>
 	<title>Walker's Fab Site</title>
 
-<meta charset="UTF-8">
-  <title>A clean navigation slider</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
 
 <style>
 
@@ -22,22 +16,29 @@ header, footer {
 }
 
 	
-nav {
-	float:left;	background-color:DarkGrey;
-     margin-right: 20px;
-     margin-left: 4px;
-     margin-top: 20px;
-     padding: 1em;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
- 
-nav ul {
-	list-style-type:none;
-	display: inline;
-	text-decoration: none;
+
+li {
+    float: left;
 }
- 
 
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
+li a:hover {
+    background-color: #111;
+    border-bottom: 3px solid #3CA2DF;
 
 article {
     margin-left: 170px;
@@ -53,9 +54,13 @@ article {
  h2 {font-size=35px;font-family:verdana;color:black;text-align:center;}
  h3 {font-size=35px;font-family:verdana;color:black;text-align:center;}
  p {color:black;font-family:Geneva;font-size:20px}
- a {font-family:verdana;font-size:20px;color:blue;display:inline;
   width:100px;
   height:100px;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
 }
 
 </style>
@@ -69,8 +74,6 @@ article {
 	
 
 <body>
-		<section id="nav-test">
-  <div id="nav-container">
     <ul>
       <li class="nav-li active-nav"><a>Home</a></li>
       <li class="nav-li"><a href="aboutme.html">About Me</a></li>
@@ -85,13 +88,6 @@ article {
       <li class="nav-li"><a href="electronics.html">Soldering</a></li>
       <li class="nav-li"><a href="final.html">Final Project</a></li>
     </ul>
-    <div id="line"></div>
-  </div>
-</section>
-  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-
-    <script src="js/index.js"></script>
-			
 </body>
 
 
