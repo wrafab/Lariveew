@@ -12,12 +12,78 @@ header, footer {
 	color: white;
 	background-color: black;
   
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #76D7C4;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 100%;
+}
+li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+li a:hover {
+    color: white;
+}
+body {
+   background-color: #CCD1D1;
+}
+
+.active {
+    background-color: #66BB6A;
+    color: white;
+}
   </style>
   
   <header>
     <h1>Straw Tower (Week 1)</h1>
   </header>
   
+  <nav>
+	  <ul>
+      <li class="nav-li"><a href="index.html">HOME</a></li>
+      <li class="nav-li"><a href="aboutme.html">ABOUT ME</a></li>
+      <li class="nav-li"><a class="active" href="Marshmellow.html">STRAW TOWER</a></li>
+      <li class="nav-li"><a href="BubbleLamp.html">BUBBLE LAMP</a></li>
+      <li class="nav-li"><a href="garmentprinting.html">GARMENT PRINTING</a></li>
+      <li class="nav-li"><a href="LaserCutting.html">LASER CUTTING</a></li>
+      <li class="nav-li"><a href="3Dprinting.html">PRINTING/SCANNING</a></li>
+      <li class="nav-li"><a href="vinyl.html">STICKERS</a></li>
+      <li class="nav-li"><a href="cncmilling.html">MILLING/CASTING</a></li>
+      <li class="nav-li"><a href="vacuum.html">SKATEBOARD</a></li>
+      <li class="nav-li"><a href="electronics.html">SOLDERING</a></li>
+      <li class="nav-li"><a href="final.html">FINAL PROJECT</a></li>
+    </ul>
+	</nav>
   <aside>
 	  <p><strong>Assignment: Build a tower out of straws, tape, string, and a cup that can hold the most pennies in the cup without the cup touching the ground</strong></p>
 	  <p>Plan: The plan was to make a rectangular pyramid out of the straws, as this seemed to be the most resilient structure for weight-bearing. The cup would be tied to the center, with the intention to distribute the weight of the pennies onto all 4 supports of the pyramid.
