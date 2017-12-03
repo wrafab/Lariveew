@@ -30,15 +30,38 @@ li {
 
 li a {
     display: block;
+    position: relative;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 li a:hover {
     background-color: #111;
-    border-bottom: 3px solid #3CA2DF;
+}
 
 article {
     margin-left: 170px;
@@ -54,9 +77,6 @@ article {
  h2 {font-size=35px;font-family:verdana;color:black;text-align:center;}
  h3 {font-size=35px;font-family:verdana;color:black;text-align:center;}
  p {color:black;font-family:Geneva;font-size:20px}
-  width:100px;
-  height:100px;
-}
 
 .active {
     background-color: #4CAF50;
@@ -75,18 +95,18 @@ article {
 
 <body>
     <ul>
-      <li class="nav-li active-nav"><a>Home</a></li>
-      <li class="nav-li"><a href="aboutme.html">About Me</a></li>
-      <li class="nav-li"><a href="Marshmellow.html">Straw Tower</a></li>
-      <li class="nav-li"><a href="BubbleLamp.html">Bubble Lamp</a></li>
-      <li class="nav-li"><a href="garmentprinting.html">Garment Printng</a></li>
-      <li class="nav-li"><a href="LaserCutting.html">Laser Cutting</a></li>
-      <li class="nav-li"><a href="3Dprinting.html">Printing/Scanning</a></li>
-      <li class="nav-li"><a href="vinyl.html">Stickers</a></li>
-      <li class="nav-li"><a href="cncmilling.html">Milling/Casting</a></li>
-      <li class="nav-li"><a href="vacuum.html">Skateboard</a></li>
-      <li class="nav-li"><a href="electronics.html">Soldering</a></li>
-      <li class="nav-li"><a href="final.html">Final Project</a></li>
+      <li class="nav-li active-nav"><a>HOME</a></li>
+      <li class="nav-li"><a href="aboutme.html">ABOUT ME</a></li>
+      <li class="nav-li"><a href="Marshmellow.html">STRAW TOWER</a></li>
+      <li class="nav-li"><a href="BubbleLamp.html">BUBBLE LAMP</a></li>
+      <li class="nav-li"><a href="garmentprinting.html">GARMENT PRINTING</a></li>
+      <li class="nav-li"><a href="LaserCutting.html">LASER CUTTING</a></li>
+      <li class="nav-li"><a href="3Dprinting.html">3D PRINTING/SCANNING</a></li>
+      <li class="nav-li"><a href="vinyl.html">STICKERS</a></li>
+      <li class="nav-li"><a href="cncmilling.html">MILLING/CASTING</a></li>
+      <li class="nav-li"><a href="vacuum.html">SKATEBOARD</a></li>
+      <li class="nav-li"><a href="electronics.html">SOLDERING</a></li>
+      <li class="nav-li"><a href="final.html">FINAL PROJECT</a></li>
     </ul>
 </body>
 
