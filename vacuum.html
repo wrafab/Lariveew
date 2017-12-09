@@ -1,0 +1,126 @@
+<html>
+<head>
+	<title>Printing/Scanning</title>
+
+
+<style>
+header, footer {
+	padding: 20px;
+	text-align:center;
+	font-family:"open-sans-condensed", sans-serif;
+	font-weight: bold;
+	color: white;
+	background-color: black;
+}
+	
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #76D7C4;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 100%;
+}
+li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+li a:hover {
+    color: white;
+}
+body {
+   background-color: #CCD1D1;
+}
+	
+	
+	
+ h1 {font-size=100px;font-family:verdana;color:white;text-align:center;}
+ h2 {font-size=35px;font-family:verdana;color:black;text-align:left;margin: 1cm 2cm 1cm 2cm}
+ h3 {font-size=35px;font-family:verdana;color:black;text-align:center;}
+ p {color:black;font-family:Geneva;font-size:20px;text-align:left;margin: 1cm 2cm 1cm 2cm}
+.active {
+    background-color: #66BB6A;
+    color: white;
+}
+</style>
+</head>
+
+	
+<header>
+	<h1>Printing/Scanning</h1>
+	
+</header>
+	
+
+<nav>
+    <ul>
+	    <li class="nav-li"><a href="index.html">HOME</a></li>
+      <li class="nav-li"><a href="aboutme.html">ABOUT ME</a></li>
+      <li class="nav-li"><a href="Marshmellow.html">STRAW TOWER</a></li>
+      <li class="nav-li"><a href="BubbleLamp.html">BUBBLE LAMP</a></li>
+      <li class="nav-li"><a href="garmentprinting.html">GARMENT PRINTING</a></li>
+      <li class="nav-li"><a href="LaserCutting.html">LASER CUTTING</a></li>
+      <li class="nav-li"><a class="active" href="3Dprinting.html">PRINTING/SCANNING</a></li>
+      <li class="nav-li"><a href="vinyl.html">STICKERS</a></li>
+      <li class="nav-li"><a href="cncmilling.html">MILLING/CASTING</a></li>
+      <li class="nav-li"><a href="vacuum.html">SKATEBOARD</a></li>
+      <li class="nav-li"><a href="electronics.html">SOLDERING</a></li>
+      <li class="nav-li"><a href="final.html">FINAL PROJECT</a></li>
+    </ul>
+</nav>
+
+
+<body>	
+    <img src="Makerbot.jpg" alt="Makerbot" align="right" width="350" height="350" style="float:right;margin:1cm 2cm 0 2cm;">
+    <h2><strong>Assignment: Discuss the limitations of the Makerbot Replicator 5th Gens</strong></h2>
+    <p>The Makerbot Replicator 5th Gens have a build plate of 10 in x 8 in x 6 in, which is the max dimensions one can 3D print something. Also, the Makerbot can connect tot both a USB and WiFi for connectivity. The minimum depth per layer is 100 microns (0.004 inches), and usable materials include ABS and PLA thermplastics. Being a 3D ptinter, the Makerbot uses additive manufacturing  to make objects, meaning it can usually be much more detailed and create hollow areas inside an object. Compared to subtractive manufacturing, additive also uses less waste than a subtracyive printer, but subtractive is for the most part cheaper and has a wider variety of usable materials. Finally, additive printers cannot get as smooth of an edge as subtractive printers (CNC milling), as they have to have a minimum layer depth. </p>
+              <hr>
+    <iframe class="render-viewer" src="https://render.githubusercontent.com/view/solid?commit=e793eabbfe52b37590ecd06b18043bbbac486fdf&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f7772616661622f4c617269766565772f653739336561626266653532623337353930656364303662313830343362626261633438366664662f574c253230486561642e73746c&amp;nwo=wrafab%2FLariveew&amp;path=WL+Head.stl&amp;repository_id=101196304&amp;repository_type=Repository#1d25faa3-039e-4c56-8c43-ba371fc34fa5" height="300 width="350" align="right" style="margin:2cm 2cm 1cm 2cm;"sandbox="allow-scripts allow-same-origin allow-top-navigation">Viewer requires iframe.</iframe>
+    <h2><strong>Assignment: Use the 3D Scanner and Meshmixer to create a 3D model of your head</strong></h2>
+    <p><strong>Process:</strong> I first used the Knockout Concepts Mobile Scanner to scan my head with some help from Roy. After this, I found a <a href="https://www.thingiverse.com/thing:2385476">pedestal</a> on Thingiverse and pasted bothe the head and the pedestal into meshmixer. I had to first make the head solid and remove any holes using the "Make Solid" tool, and then I made the pedestal a bit skinnier and attached it the the head. I shrunk down everything so that the height was 4 inches. I then exported it as an .STL and converted it to a .makerbot using the Makerbot program and finally printed it, which only took about 4 hours.</p>
+    <p><strong>Files:</strong> <a href="walker.stl">Original Head</a>, <a href="pedestal.stl">Pedestal</a>, <a href="wl.mix">Final Head (.mix)</a> <a href="WalkerHead (Finished).makerbot">Final Head (Makerbot)</a></p>
+              <hr>
+    <img src="20171209_113230.jpg" alt="Pinecone" width="230" height=250" style="float:right;margin:1cm 2cm 0 2cm;">         
+    <h2><strong>Assignment: Design and Print somehting that could not be made subtractively</strong></h2>
+    <p><strong>Process:</strong> I chose to create a pinecone shape with gaps in between the tabs. The subtractive printer could not print this because the layers are too thin and it also probably could not cut in between the tabs.</p>
+    <p><strong>Files:</strong> None </p>
+              <hr>
+    <iframe class="render-viewer" src="https://render.githubusercontent.com/view/solid?commit=e793eabbfe52b37590ecd06b18043bbbac486fdf&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f7772616661622f4c617269766565772f653739336561626266653532623337353930656364303662313830343362626261633438366664662f4472697070792532307468696e6725323076312e73746c&amp;nwo=wrafab%2FLariveew&amp;path=Drippy+thing+v1.stl&amp;repository_id=101196304&amp;repository_type=Repository#34ea5de8-b716-4f66-8179-3d81ac6b35f5" height="300" width="300" align="right" style="margin:2cm 2cm 1cm 2cm;" sandbox="allow-scripts allow-same-origin allow-top-navigation">Viewer requires iframe.</iframe>         
+    <h2><strong>Assignment: Design and Print a drip irrigation system that connects to a water bottle</strong></h2>
+    <p><strong>Process:</strong> Roy, who was my partner, and I used Fusion 360 to first create a long and flat right triangle. We then used the revolve tool to make a cylindrical pyramid. Then, using the hole tool, we did the small thing on the inside, making this triangle a bit smaller. This created a hollow center where the water could flow. Finally, we used the pre-made ACME screw thread and attached it to the inside of the hole. We then exported it to the Makerbot software and got the .makerbot file, and finally printed it and tested it, and it works.</p>
+    <p><strong>Files:</strong> <a href="Drippy thing v1.stl">Final Drip Irrigation</a> </p>
+</body>	
+
+	
+<footer>
+</footer>
+	
+	
+</html>
