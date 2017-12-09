@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Printing/Scanning</title>
+	<title>Skateboard</title>
 
 
 <style>
@@ -59,7 +59,7 @@ body {
    background-color: #CCD1D1;
 }
 	
-	
+.rotatefield {transform: rotate(90deg);}	
 	
  h1 {font-size=100px;font-family:verdana;color:white;text-align:center;}
  h2 {font-size=35px;font-family:verdana;color:black;text-align:left;margin: 1cm 2cm 1cm 2cm}
@@ -74,7 +74,7 @@ body {
 
 	
 <header>
-	<h1>Printing/Scanning</h1>
+	<h1>Skateboard</h1>
 	
 </header>
 	
@@ -87,10 +87,10 @@ body {
       <li class="nav-li"><a href="BubbleLamp.html">BUBBLE LAMP</a></li>
       <li class="nav-li"><a href="garmentprinting.html">GARMENT PRINTING</a></li>
       <li class="nav-li"><a href="LaserCutting.html">LASER CUTTING</a></li>
-      <li class="nav-li"><a class="active" href="3Dprinting.html">PRINTING/SCANNING</a></li>
+      <li class="nav-li"><a href="3Dprinting.html">PRINTING/SCANNING</a></li>
       <li class="nav-li"><a href="vinyl.html">STICKERS</a></li>
       <li class="nav-li"><a href="cncmilling.html">MILLING/CASTING</a></li>
-      <li class="nav-li"><a href="vacuum.html">SKATEBOARD</a></li>
+      <li class="nav-li"><a class="active" href="vacuum.html">SKATEBOARD</a></li>
       <li class="nav-li"><a href="electronics.html">SOLDERING</a></li>
       <li class="nav-li"><a href="final.html">FINAL PROJECT</a></li>
     </ul>
@@ -98,24 +98,12 @@ body {
 
 
 <body>	
-    <img src="Makerbot.jpg" alt="Makerbot" align="right" width="350" height="350" style="float:right;margin:1cm 2cm 0 2cm;">
-    <h2><strong>Assignment: Discuss the limitations of the Makerbot Replicator 5th Gens</strong></h2>
-    <p>The Makerbot Replicator 5th Gens have a build plate of 10 in x 8 in x 6 in, which is the max dimensions one can 3D print something. Also, the Makerbot can connect tot both a USB and WiFi for connectivity. The minimum depth per layer is 100 microns (0.004 inches), and usable materials include ABS and PLA thermplastics. Being a 3D ptinter, the Makerbot uses additive manufacturing  to make objects, meaning it can usually be much more detailed and create hollow areas inside an object. Compared to subtractive manufacturing, additive also uses less waste than a subtracyive printer, but subtractive is for the most part cheaper and has a wider variety of usable materials. Finally, additive printers cannot get as smooth of an edge as subtractive printers (CNC milling), as they have to have a minimum layer depth. </p>
-              <hr>
-    <iframe class="render-viewer" src="https://render.githubusercontent.com/view/solid?commit=e793eabbfe52b37590ecd06b18043bbbac486fdf&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f7772616661622f4c617269766565772f653739336561626266653532623337353930656364303662313830343362626261633438366664662f574c253230486561642e73746c&amp;nwo=wrafab%2FLariveew&amp;path=WL+Head.stl&amp;repository_id=101196304&amp;repository_type=Repository#1d25faa3-039e-4c56-8c43-ba371fc34fa5" height="300 width="350" align="right" style="margin:2cm 2cm 1cm 2cm;"sandbox="allow-scripts allow-same-origin allow-top-navigation">Viewer requires iframe.</iframe>
-    <h2><strong>Assignment: Use the 3D Scanner and Meshmixer to create a 3D model of your head</strong></h2>
-    <p><strong>Process:</strong> I first used the Knockout Concepts Mobile Scanner to scan my head with some help from Roy. After this, I found a <a href="https://www.thingiverse.com/thing:2385476">pedestal</a> on Thingiverse and pasted bothe the head and the pedestal into meshmixer. I had to first make the head solid and remove any holes using the "Make Solid" tool, and then I made the pedestal a bit skinnier and attached it the the head. I shrunk down everything so that the height was 4 inches. I then exported it as an .STL and converted it to a .makerbot using the Makerbot program and finally printed it, which only took about 4 hours.</p>
-    <p><strong>Files:</strong> <a href="walker.stl">Original Head</a>, <a href="pedestal.stl">Pedestal</a>, <a href="wl.mix">Final Head (.mix)</a> <a href="WalkerHead (Finished).makerbot">Final Head (Makerbot)</a></p>
-              <hr>
-    <img src="20171209_113230.jpg" alt="Pinecone" width="230" height=250" style="float:right;margin:1cm 2cm 0 2cm;">         
-    <h2><strong>Assignment: Design and Print somehting that could not be made subtractively</strong></h2>
-    <p><strong>Process:</strong> I chose to create a pinecone shape with gaps in between the tabs. The subtractive printer could not print this because the layers are too thin and it also probably could not cut in between the tabs.</p>
-    <p><strong>Files:</strong> None </p>
-              <hr>
-    <iframe class="render-viewer" src="https://render.githubusercontent.com/view/solid?commit=e793eabbfe52b37590ecd06b18043bbbac486fdf&amp;enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f7772616661622f4c617269766565772f653739336561626266653532623337353930656364303662313830343362626261633438366664662f4472697070792532307468696e6725323076312e73746c&amp;nwo=wrafab%2FLariveew&amp;path=Drippy+thing+v1.stl&amp;repository_id=101196304&amp;repository_type=Repository#34ea5de8-b716-4f66-8179-3d81ac6b35f5" height="300" width="300" align="right" style="margin:2cm 2cm 1cm 2cm;" sandbox="allow-scripts allow-same-origin allow-top-navigation">Viewer requires iframe.</iframe>         
-    <h2><strong>Assignment: Design and Print a drip irrigation system that connects to a water bottle</strong></h2>
-    <p><strong>Process:</strong> Roy, who was my partner, and I used Fusion 360 to first create a long and flat right triangle. We then used the revolve tool to make a cylindrical pyramid. Then, using the hole tool, we did the small thing on the inside, making this triangle a bit smaller. This created a hollow center where the water could flow. Finally, we used the pre-made ACME screw thread and attached it to the inside of the hole. We then exported it to the Makerbot software and got the .makerbot file, and finally printed it and tested it, and it works.</p>
-    <p><strong>Files:</strong> <a href="Drippy thing v1.stl">Final Drip Irrigation</a> </p>
+    <img src="20171204_104205.jpg" alt="Skateboard (Top)" class="rotatefield" align="right" width="700" height="250" style="float:right;margin:1cm 2cm 0 2cm;">
+    <h2><strong>Assignment: Make a skateboard using Titebond III Glue and Vacuum Forming</strong></h2>
+    <p><strong>Building Process:</strong> Because the glue used on these skateboards started to dry so fast, the first step to making the skateboards was to set everything up. I got about a cup of Titebond III glue and placed it in a cup on the table. Next, since I would be vacuum forming the bag later, I placed a strip of air tight tar tape on the top of the bag and pressed one side of it down, as this would save time later. Finally, I started glueing the layers together with my partner. After the first glue want on, I had about seven minutes to get the skateboard sealed into the bag. The skateboard had seven layers that alternated between long-grain and short-grain. The long-grain made the board more sturdy, while the short-grain made it more felixble. After glueing the layers, I placed the skateboard on a styrofoam mold so it would curve at the ends and taped the board to the styrofoam to keep it from moving. I placed the whole thing in the vacuum bag and put the rebreather mesh over the vacuum hole so that the suction wouldn't mess up the vacuum sealing. I then pressed down the tar tape I had placed earlier, making sure it was air tight (or what I though was air tight), and used a pump to vacuum seal the bag until I heard clicking. I left the board to dry overnight, but when I took it out of the bag the next morning, it appeared that the bag hadn't been sealed air tight and some air had seemed in. As a result of this, the board was barely curved around the styrofoam and the layers had moved a bit and were not stuck together well. Anyways, I was running out of time, so I used the edge remover and sander to get rid of the sticking-out edges, and used some wood glue and clamps to glue the weak parts of layers back together. Besides the uncurved sides, it ended up looking okay.</p>
+    <img src="20171204_104200.jpg" alt="Skateboard (Bottom)" class="rotatefield" align="right" width="700" height="250" style="float:right;margin:1cm 2cm 0 2cm;">
+    <p><strong>Finishing Touches:</strong> To decorate the skateboard, I found an geometric pattern I thought would look cool on the skateboard and uploaded it to CorelDraw. I cropped the image to fit in a 32"x8" space (the dimensions of the skateboard), and finally contoured around the image with the specific Roland pink that the machine used to recognize a cut path. Finally, I exported the file as a .eps and printed it on the 540i. I stuck the vinyl to the skateboard's bottom and trimmed around the edges with an exacto knife, which worked better than I originally thought. I then coated the board with the SPAR urethane and let it dry. Overall, the skateboard looks really cool, and now I just wish I had the slightest idea of how to use it.
+	<hr>
 </body>	
 
 	
